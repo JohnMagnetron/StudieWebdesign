@@ -6,3 +6,8 @@
 .nav-text {
     color: #fff !important;
 }
+
+.overflow-div { 
+    overflow: scroll;
+    height: 50%;
+}
