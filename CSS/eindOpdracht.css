@@ -1,5 +1,5 @@
 .navigatie {
-    background-color: #dd1010 !important;
+    background-color: #dc3545 !important;
     color: #fff !important;
 }
 
@@ -8,6 +8,16 @@
 }
 
 .overflow-div { 
-    overflow: scroll;
-    height: 50%;
+    position: relative;
+    height: 500px;
+    overflow: auto;
 }
+
+.div-doel {
+    position: relative;
+    padding: 2%;
+    border: 1px solid #c1c1c1;
+    margin: 2%;
+    border-radius: 15px;
+}
+
