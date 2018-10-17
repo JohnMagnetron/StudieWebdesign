@@ -1,5 +1,10 @@
+:root {
+    --doel-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .navigate {
     background-color: #b30000 !important;
+    z-index: 1!important;
 }
 
 .nav-text {
@@ -18,7 +23,10 @@
     border: 1px solid #c1c1c1;
     margin: 2%;
     border-radius: 15px;
+    box-shadow: var(--doel-shadow);
 }
+
+
 
 .image-background {
     background-image: url("/avans/webdesign/opdrachten/eindOpdracht/images/ft2571.jpg");
@@ -40,6 +48,10 @@
 }
 
 .footer-margin {
+    height: 50px;
+}
+
+.header-margin {
     height: 50px;
 }
 
@@ -71,5 +83,18 @@
 .transparent-body:hover {
     background: #fff;
     color: #000;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: var(--doel-shadow);
+}
+
+#content_exe::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#content_exe::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #b30000;
 }
