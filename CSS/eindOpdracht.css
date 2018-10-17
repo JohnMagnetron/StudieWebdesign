@@ -36,7 +36,7 @@
 }
 
 .red-text {
-    color: #b30000;
+    color: #b30000 !important;
 }
 
 .footer-margin {
@@ -45,4 +45,31 @@
 
 .hidden {
     display: none;
+}
+
+.hr-vert {
+    border: none;
+    border-left: 1px solid #c1c1c1;
+    height: auto;
+    /*width: 1px;*/
+}
+
+.active {
+    background-color: #b30000!important;
+    color: #fff!important;
+    transition: all 0.4s;
+}
+
+.transparent-body {
+    background: transparent;
+    color: #fff;
+    text-align: left;
+    border: 1px solid #fff;
+    transition: all 0.5s;
+}
+
+.transparent-body:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
