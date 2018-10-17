@@ -8,12 +8,14 @@
   <link rel="stylesheet" href="/avans/webdesign/opdrachten/eindopdracht/css/contactPage.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.js'></script>
+  
 </head>
 
 <body>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-dark navigate">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navigate">
       <a class="navbar-brand nav-text" href="/avans/webdesign/opdrachten/eindopdracht/eindOpdracht.html">Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,12 +37,19 @@
       </div>
     </nav>
   </div>
+  <p class="header-margin"></p>
+
+  <div class="jumbotron contact-background">
+    <h1 class="display-4">Contact</h1>
+    <p class="lead">Dit is onze website voor de eindopdracht van webdesign en studievaardigheden</p>
+  </div>
+  <!--
   <h1 class="red-text"> Contact</h1>
 
-  <img src="Images/contact-us.jpg" class="img-fluid" alt="Responsive image">
-
+  <img src="images/contact-us.jpg" class="img-fluid" alt="Responsive image">
+  -->
   <div class="row">
-    <div class="col-sm-3 card-contact card-left-side">
+    <div class="col-sm-3 card-contact card-left-side" data-modalid="makers_modal" data-toggle="tooltip" data-placement="top" title="Press for more info!">
       <center>
         <h4 class="red-text">Makers</h4>
         is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -51,8 +60,9 @@
         including versions of Lorem Ipsum.
       </center>
     </div>
+    <button class="hidden" id="launch_makers_modal" data-target="makers_modal" data-toggle="modal"></button>
     <hr class="hr-vert">
-    <div class="col-sm-3 card-contact">
+    <div class="col-sm-3 card-contact" data-modalid="opdracht_modal" data-toggle="tooltip" data-placement="top" title="Press for more info!">
       <center>
         <h4 class="red-text">Opdracht</h4>
         is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -63,8 +73,9 @@
         including versions of Lorem Ipsum.
       </center>
     </div>
+    <button class="hidden" id="launch_opdracht_modal" data-target="opdracht_modal" data-toggle="modal"></button>
     <hr class="hr-vert">
-    <div class="col-sm-3 card-contact card-right-side">
+    <div class="col-sm-3 card-contact card-right-side" data-modalid="opleiding_modal" data-toggle="tooltip" data-placement="top" title="Press for more info!">
       <center>
         <h4 class="red-text">Opleiding</h4>
         is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -75,16 +86,74 @@
         including versions of Lorem Ipsum.
       </center>
     </div>
+    <button class="hidden" id="launch_opleiding_modal" data-target="opleiding_modal" data-toggle="modal"></button>
   </div>
+
+  <div class="modal fade" id="makers_modal" tabindex="-1" role="dialog" aria-labelledby="makers_label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="makers_label">Makers</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Dit is de makers modal, misschien kunnen we er wat mee
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="opleiding_modal" tabindex="-1" role="dialog" aria-labelledby="opleiding_label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="opleiding_label">Opleiding</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Dit is de opleiding modal, misschien kunnen we er wat mee
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="opdracht_modal" tabindex="-1" role="dialog" aria-labelledby="opdracht_label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="opdracht_label">Opdracht</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Dit is de opdracht modal, misschien kunnen we er wat mee
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
   <p class="footer-margin"></p>
   <nav class="navbar fixed-bottom navbar-dark bg-dark footer">
     <left>
-      <a class="navbar-brand" href="#">Home</a>
-      <a class="navbar-brand" href="#">Lars</a>
-      <a class="navbar-brand" href="#">Jeremy</a>
+      <a class="navbar-brand" href="/avans/webdesign/opdrachten/eindopdracht/eindOpdracht.html">Home</a>
+      <a class="navbar-brand" href="/avans/webdesign/opdrachten/eindopdracht/lars-page.html">Lars</a>
+      <a class="navbar-brand" href="/avans/webdesign/opdrachten/eindopdracht/jeremy-page.html">Jeremy</a>
       <a class="navbar-brand" href="#">Contact</a>
     </left>
-    <a class="navbar-brand" style="color:white">Copyright 2018</a>
+    <a class="navbar-brand nav-text">Copyright 2018</a>
 
   </nav>
 </body>
