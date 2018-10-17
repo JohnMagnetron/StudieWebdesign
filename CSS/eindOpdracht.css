@@ -1,4 +1,4 @@
-.navbar {
+.navigate {
     background-color: #b30000 !important;
 }
 
@@ -6,7 +6,7 @@
     color: #fff !important;
 }
 
-.overflow-div { 
+.overflow-div {
     position: relative;
     height: 500px;
     overflow: auto;
@@ -26,17 +26,23 @@
     background-origin: border-box;
     background-repeat: repeat-x;
     background-position: center;
-    background-size: 100%; 
+    background-size: 100%;
     height: 750px;
     color: #fff;
 }
+
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    background-color: #b30000;
-  }
+    opacity: 0.7;
+}
 
+.red-text {
+    color: #b30000;
+}
 
+.footer-margin {
+    height: 50px;
+}
+
+.hidden {
+    display: none;
+}
