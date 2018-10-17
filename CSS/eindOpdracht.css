@@ -26,7 +26,17 @@
     box-shadow: var(--doel-shadow);
 }
 
-
+.contact-background {
+    background-image: url("../images/contact-us.jpg");
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    max-width: 100%;
+    height: 350px;
+    color: #b30000;
+}
 
 .image-background {
     background-image: url("/avans/webdesign/opdrachten/eindOpdracht/images/ft2571.jpg");
@@ -52,7 +62,7 @@
 }
 
 .header-margin {
-    height: 50px;
+    height: 40px;
 }
 
 .hidden {
@@ -95,6 +105,10 @@
 #content_exe::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #b30000;
+}
+
+.make-sticky {
+    position: sticky;
 }
