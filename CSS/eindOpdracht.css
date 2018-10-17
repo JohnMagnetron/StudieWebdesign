@@ -27,7 +27,7 @@
 }
 
 .contact-background {
-    background-image: url("../images/contact-us.jpg");
+    background-image: url("../Images/contact-us.jpg");
     background-attachment: fixed;
     background-origin: border-box;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@
 }
 
 .image-background {
-    background-image: url("../images/ft2571.jpg");
+    background-image: url("../Images/ft2571.jpg");
     background-attachment: fixed;
     background-origin: border-box;
     background-repeat: repeat-x;
