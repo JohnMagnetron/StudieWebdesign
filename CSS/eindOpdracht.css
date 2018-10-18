@@ -5,7 +5,7 @@
 .navigate {
     background-color: #b30000 !important;
     z-index: 1!important;
-    height: 6vh;
+    height: 8vh;
     font-size: 2.5rem;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .header-margin {
-    height: 5vh;
+    height: 7vh;
 }
 
 .hidden {
@@ -125,7 +125,7 @@ p{
     font-size:2rem;
 }
 .navbar-brand{
-    font-size:2rem;  
+    font-size:3rem;  
 }
 
 .make-sticky {
@@ -161,5 +161,14 @@ p{
     }
     .navbar-brand{
         font-size:1rem;  
+    }
+    .navigate {
+        background-color: #b30000 !important;
+        z-index: 1!important;
+        height: 6vh;
+        font-size: 2.5rem;
+    }
+    .header-margin {
+        height: 5vh;
     }
 }
