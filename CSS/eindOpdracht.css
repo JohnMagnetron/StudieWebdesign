@@ -5,6 +5,8 @@
 .navigate {
     background-color: #b30000 !important;
     z-index: 1!important;
+    height: 6vh;
+    font-size: 2.5rem;
 }
 
 .nav-text {
@@ -32,7 +34,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    height: auto;
+    height: 15vh;
     color: #b30000;
 }
 
@@ -60,7 +62,7 @@
 }
 
 .header-margin {
-    height: 40px;
+    height: 5vh;
 }
 
 .hidden {
@@ -106,6 +108,25 @@
 	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #b30000;
 }
+h4{
+    font-size:3rem;
+}
+p{
+    font-size:2rem;
+}
+.display-4{
+    font-size: 5rem;
+    color: #b30000;
+}
+.lead{
+    font-size:2rem;
+}
+.nav-text{
+    font-size:2rem;
+}
+.navbar-brand{
+    font-size:2rem;  
+}
 
 .make-sticky {
     position: sticky;
@@ -121,5 +142,24 @@
         max-width: 100%;
         height: 30vh;
         color: #b30000;
+    }
+    h4{
+        font-size:2rem;
+    }
+    p{
+        font-size:1rem;
+    }
+    .display-4{
+        font-size: 4rem;
+        color: #b30000;
+    }
+    .lead{
+        font-size:1rem;
+    }
+    .nav-text{
+        font-size:1rem;
+    }
+    .navbar-brand{
+        font-size:1rem;  
     }
 }
