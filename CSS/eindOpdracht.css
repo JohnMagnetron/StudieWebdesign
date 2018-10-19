@@ -51,6 +51,9 @@
 
 .footer {
     opacity: 0.7;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .red-text {
@@ -171,4 +174,12 @@ p{
     .header-margin {
         height: 5vh;
     }
+    
+.footer {
+    opacity: 0.7;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
 }
