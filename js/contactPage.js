@@ -29,14 +29,4 @@ $(function() {
             });
         }
     });
-    
-    $('.card-contact').tooltip();
-    
-    $('.card-contact').click(function () {
-        console.log(this);
-        console.log($('#launch_' + this.dataset['modalid']));
-        var modalid = this.dataset['modalid'];
-        $('#' + modalid).modal();
-        $('#launch_' + this.dataset['modalid'])
-    });
 });

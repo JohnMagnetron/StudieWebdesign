@@ -1,18 +1,9 @@
-$(document).ready(function () {
-    //if ($('#mySearch')) {
-        var id_list = $("h4").map(function () {
-                if (this.id !== "") {
-                    return this.id;
-                }
-            }).get();
-        
-        $("h5").each(function() {
-            if ( this.id !== "" ) {
-                id_list.push(this.id);
-            }
-        });
+$(function() {
+    $('#goToJeremy').click(function() {
+        window.location = "https://2141535.000webhostapp.com/jeremy-page.html";
+    });
 
-        console.log(id_list);
-        
-   // }
+    $('#goToLars').click(function() {
+        window.location = "https://2141535.000webhostapp.com/lars-page.html";
+    });
 });
