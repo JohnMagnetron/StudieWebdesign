@@ -17,3 +17,13 @@
     margin-right: 2%;
 }
 
+p {
+    font-size: inherit!important;
+}
+
+td {
+    border: 1px solid #c1c1c1;
+    text-align: left;
+    padding: 8px;
+}
+
